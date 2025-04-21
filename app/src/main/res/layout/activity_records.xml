@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000000"
+    android:paddingHorizontal="24dp"
+    android:id="@+id/root_record_screen"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/back_btn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:cardElevation="0dp"
+            android:backgroundTint="#00FFFFFF"
+            android:layout_gravity="center_vertical"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/records"
+            app:layout_constraintVertical_bias=".2">
+            <ImageView
+                android:id="@+id/btn_back"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/ic_back_circle"
+
+                app:tint="#F1B079"
+                />
+        </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/records"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:backgroundTint="#E9E9E9"
+        android:padding="20dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="0dp"
+        app:layout_constraintDimensionRatio="1: 1.2"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias=".5">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+           >
+            <LinearLayout
+                android:layout_marginTop="16dp"
+                android:layout_marginHorizontal="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <androidx.cardview.widget.CardView
+                    android:visibility="invisible"
+
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    app:cardCornerRadius="7dp"
+                    android:backgroundTint="#393939"
+                    app:cardElevation="0dp"
+                    android:layout_gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="26dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:padding="1dp"
+                        android:src="@drawable/ic_back" />
+                </androidx.cardview.widget.CardView>
+                
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:textColor="#E6FF9800"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="45sp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/menu_font"
+                    android:text="Records"/>
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"/>
+                <Space
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"/>
+
+            </LinearLayout>
+
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"/>
+            
+            <androidx.cardview.widget.CardView
+                app:cardCornerRadius="15dp"
+                app:cardElevation="0dp"
+                android:backgroundTint="#A1AB55"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginHorizontal="16dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="8dp">
+                    <ImageView
+                        android:layout_marginStart="4dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_width="40dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/ic_img_level3"
+                        />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text="3 x 3"
+                        android:textSize="35sp"
+                        android:fontFamily="@font/desc_font2"
+                        android:textColor="#FFFFFF"
+                        android:layout_marginStart="8dp"
+                        android:layout_weight="4"/>
+                    <TextView
+                        android:id="@+id/record_3_3"
+                        android:gravity="center"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text="32"
+                        android:textSize="35sp"
+                        android:fontFamily="@font/desc_font2"
+                        android:textColor="#FFFFFF"
+                        android:layout_weight="5"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="16dp"/>
+            <androidx.cardview.widget.CardView
+                app:cardCornerRadius="15dp"
+                app:cardElevation="0dp"
+                android:backgroundTint="#F1B55D"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginHorizontal="16dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="8dp">
+                    <ImageView
+                        android:layout_marginStart="4dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_width="40dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/ic_2k48_4_4"
+                        />
+                    <TextView
+
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text="4 x 4"
+                        android:textSize="35sp"
+                        android:fontFamily="@font/desc_font2"
+                        android:textColor="#FFFFFF"
+                        android:layout_marginStart="8dp"
+                        android:layout_weight="4"/>
+                    <TextView
+                        android:id="@+id/record_4_4"
+                        android:gravity="center"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text="4545"
+                        android:textSize="35sp"
+                        android:fontFamily="@font/desc_font2"
+                        android:textColor="#FFFFFF"
+                        android:layout_weight="5"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="16dp"/>
+            <androidx.cardview.widget.CardView
+                app:cardCornerRadius="15dp"
+                app:cardElevation="0dp"
+                android:backgroundTint="#F09078"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginHorizontal="16dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="8dp">
+                    <ImageView
+                        android:layout_marginStart="4dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_width="40dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/ic_img_level5"
+                        />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text="5 x 5"
+                        android:textSize="35sp"
+                        android:fontFamily="@font/desc_font2"
+                        android:textColor="#FFFFFF"
+                        android:layout_marginStart="8dp"
+                        android:layout_weight="4"/>
+                    <TextView
+                        android:id="@+id/record_5_5"
+                        android:gravity="center"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text="12345678"
+                        android:textSize="35sp"
+                        android:fontFamily="@font/desc_font2"
+                        android:textColor="#FFFFFF"
+                        android:layout_weight="5"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"/>
+
+
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

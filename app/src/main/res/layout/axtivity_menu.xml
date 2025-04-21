@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:id="@+id/root_menu_screen"
+    android:orientation="vertical"
+    >
+
+    <FrameLayout
+        android:id="@+id/image_laoyut"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="24dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/img_level_game"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_2k48_4_4"
+            />
+       <androidx.appcompat.widget.AppCompatButton
+           android:id="@+id/level_game"
+           android:backgroundTint="#bbada0"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center"
+           android:text="4 x 4"
+           android:textColor="@color/white"
+           android:textSize="30sp"
+           android:textStyle="bold">
+
+       </androidx.appcompat.widget.AppCompatButton>
+
+
+    </FrameLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="36dp"
+        android:id="@+id/continueBtn"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#288173"
+        android:text="Continue"
+        app:cardCornerRadius="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_laoyut" >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Continue"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="12dp"
+        android:id="@+id/playBtn"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#5d9a66"
+        app:cardCornerRadius="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/continueBtn" >
+
+        <TextView
+            android:id="@+id/playBtnText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="New Game"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="12dp"
+        android:id="@+id/level3"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#A1AB56"
+        app:cardCornerRadius="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/playBtn" >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text= "3 x 3"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="12dp"
+        android:id="@+id/level4"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#f1b55e"
+        app:cardCornerRadius="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/level3" >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text= "4 x 4"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            />
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="12dp"
+        android:id="@+id/level5"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#F09079"
+        app:cardCornerRadius="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/level4" >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text= "5 x 5"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            />
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="12dp"
+        android:id="@+id/recordsBtn"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#F66C5D"
+        app:cardCornerRadius="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/level5" >
+        <TextView
+            android:id="@+id/aboutBtnText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text= "Records"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            />
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="12dp"
+        android:id="@+id/aboutBtn"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#E91E63"
+        app:cardCornerRadius="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recordsBtn" >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text= "About"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            />
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
